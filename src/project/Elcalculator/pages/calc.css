@@ -1,0 +1,139 @@
+.body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.calculator {
+    height: 80vh;
+    width: 60vh;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid #2934d1; */
+    border: 1px solid #797A87;
+}
+
+.output{
+    border: 2px solid #797A87;
+    height: 10vh;
+    background-color: #797A87;
+}
+
+.row {
+    flex: 1;
+    display: flex;
+}
+
+.number, .normal, .operator {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #797A87;
+    font-size: 4vh;
+    cursor: pointer;
+    user-select: none;
+    height: 13.7vh;
+}
+
+.zero{
+    width: 29.8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #797A87;
+    font-size: 4vh;
+    cursor: pointer;
+    user-select: none;
+}
+
+.operator{
+    background-color: #F38535;
+    color: white;
+}
+
+.output{
+    font-size: 7vh;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+
+}
+
+
+
+/* Meme Video Overlay */
+.meme-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(4px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.meme-modal {
+    background-color: #1e1e24;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.6);
+    max-width: 90vw;
+    width: 440px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #F38535;
+    animation: memeAppear 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+}
+
+@keyframes memeAppear {
+    from {
+        transform: scale(0.7);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.meme-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 16px;
+    background-color: #F38535;
+    color: white;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 1.1rem;
+}
+
+.meme-close-btn {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 1.3rem;
+    cursor: pointer;
+    padding: 2px 8px;
+    border-radius: 4px;
+    line-height: 1;
+}
+
+.meme-close-btn:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.meme-video {
+    width: 100%;
+    max-height: 65vh;
+    display: block;
+    background-color: black;
+}

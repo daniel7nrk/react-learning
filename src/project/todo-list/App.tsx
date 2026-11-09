@@ -1,0 +1,13 @@
+import './App.css'
+import Todo from './page/todo'
+
+function App() {
+
+  return (
+    <>
+    <Todo/>
+    </>
+  )
+}
+
+export default App
