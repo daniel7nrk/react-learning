@@ -1,7 +1,7 @@
-import './App.css'
+
 import Todo from './page/todo'
 
-function App() {
+function TodoList() {
 
   return (
     <>
@@ -10,4 +10,4 @@ function App() {
   )
 }
 
-export default App
+export default TodoList
